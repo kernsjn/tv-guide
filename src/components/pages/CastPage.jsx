@@ -16,8 +16,8 @@ const CastPage = props => {
     setCastData(resp.data.cast)
   }
 
-const CastPage = () => {
-  return <div></div>
+  return
+  ;<div></div>
 }
 
 export default CastPage
