@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Link } from 'react'
 import axios from 'axios'
-import { link } from 'react-router-dom'
 
 const HomePage = () => {
   const [page, setPage] = useState(1)
