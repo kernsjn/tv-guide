@@ -37,10 +37,6 @@ const CastPage = props => {
         </section>
       </section>
 
-<<<<<<< HEAD
-  return
-  ;<div></div>
-=======
       <section className="cast-details">
         <h2>Cast</h2>
         <section className="cast-info">
@@ -51,7 +47,6 @@ const CastPage = props => {
       </section>
     </>
   )
->>>>>>> f7d6b0cc05e7d5192a188b9245e782c52b9c8e9f
 }
 
 export default CastPage

@@ -4,7 +4,7 @@ import { link } from 'react-router-dom'
 
 const HomePage = () => {
   const [page, setPage] = useState(1)
-  const [show, setSHow] = useState[[]]
+  const [show, setShow] = useState[[]]
   const [featured, setFeatured] = useState(0)
 
   const topShowAPI = async () => {
