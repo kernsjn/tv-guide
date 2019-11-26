@@ -57,3 +57,7 @@ body {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
+
+.strong {
+  font-weight: 500;
+}
