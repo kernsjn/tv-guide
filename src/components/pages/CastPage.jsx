@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import React from 'react'
 import Crew from './components/Crew'
 import Cast from './components/Cast'
 
@@ -10,16 +9,18 @@ const CastPage = props => {
   const showData = props.match.params.results
 
   const getApiData = async () => {
-    const reps = await axios.get(
+    const resp = await axios.get(
       `https://api.themovieb.org/3/tv${showData.id}/credits?api_key=9c1bbfefb575f9cb6c182e019bc74b99&language=en-US`
     )
     setCastData(resp.data.cast)
     setCrewData(resp.data.crew.slice(0, 10))
   }
   console.log(props.match.params)
+
   useEffect(() => {
     getApiData()
   }, [])
+
   return (
     <>
       <section className="cast-page">
@@ -37,10 +38,6 @@ const CastPage = props => {
         </section>
       </section>
 
-<<<<<<< HEAD
-  return
-  ;<div></div>
-=======
       <section className="cast-details">
         <h2>Cast</h2>
         <section className="cast-info">
@@ -51,7 +48,6 @@ const CastPage = props => {
       </section>
     </>
   )
->>>>>>> f7d6b0cc05e7d5192a188b9245e782c52b9c8e9f
 }
 
 export default CastPage
