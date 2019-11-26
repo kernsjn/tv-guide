@@ -58,11 +58,6 @@ body {
   font-size: 1.5rem;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: rgb(145, 76, 29);
+.strong {
+  font-weight: 500;
 }
