@@ -1,3 +1,9 @@
 import React from 'react'
 
-const Cast = props => {}
+import React from 'react'
+
+const CastPage = () => {
+  return <div></div>
+}
+
+export default CastPage
