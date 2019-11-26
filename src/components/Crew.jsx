@@ -6,11 +6,9 @@ const Crew = props => {
       <section>
         <section>
           <span>
-            <h1 className="strong">
-              {/* this is where the props stuff goes {} */}
-            </h1>
+            <h1 className="strong">{props.info.job}</h1>
           </span>
-          {/* this is where the props stuff goes {} */}
+          {props.info.name}
         </section>
       </section>
     </>
