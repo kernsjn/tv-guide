@@ -29,11 +29,11 @@ const HomePage = () => {
         <h1 className="top-title">Top-Rated TV Shows</h1>
         <div className="tv-item-random">
           <div className>
-            <Link to={{ pathname: `/${tvShow[random].id}`, state: { show } }}>
-              <img
-                src={`https://image.tmdb.org/t/p/w500${tvShow[random].poster_path}`}
-              />
-            </Link>
+            {/* <Link to={{ pathname: `/${tvShow[random].id}`, state: { show } }}> */}
+            <img
+              src={`https://image.tmdb.org/t/p/w500${tvShow[random].poster_path}`}
+            />
+            {/* </Link> */}
           </div>
           <div>
             <h2>{tvShow[random].name}</h2>
