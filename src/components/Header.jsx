@@ -6,6 +6,7 @@ const Header = () => {
     <>
       <main>
         <section>
+          <h1 className="top-title">Top-Rated TV Shows</h1>
           <img src="" />
           <header></header>
         </section>

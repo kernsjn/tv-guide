@@ -26,19 +26,19 @@ const HomePage = () => {
   return (
     <>
       <main className="main-page">
-        <h1 className="top-title">Top-Rated TV Shows</h1>
         <div className="tv-item-random">
           <div className>
             {/* <Link to={{ pathname: `/${tvShow[random].id}`, state: { show } }}> */}
             <img
+              className="random-image"
               src={`https://image.tmdb.org/t/p/w500${tvShow[random].poster_path}`}
             />
             {/* </Link> */}
           </div>
-          <div>
+          <div className="details">
             <h2>{tvShow[random].name}</h2>
             <h3>Rating: {tvShow[random].vote_average}</h3>
-            <p>{tvShow[random].overview}</p>
+            <p className="random-overview">{tvShow[random].overview}</p>
           </div>
         </div>
         <section className="tv-item-section">
@@ -47,17 +47,19 @@ const HomePage = () => {
               return (
                 <li className="item" key={i} show={show}>
                   <Link
+                    className="show-name"
                     to={{
                       pathname: `/${show.id}`,
                       state: { show },
                     }}
                   >
                     <img
+                      className="other-image"
                       src={`https://image.tmdb.org/t/p/w500${show.poster_path}`}
                     />
                     <h3>{show.name}</h3>
                   </Link>
-                  <h3>Rating: {show.vote_average}</h3>
+                  <h3 className="rating">Rating: {show.vote_average}</h3>
                 </li>
               )
             })}
