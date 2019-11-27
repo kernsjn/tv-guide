@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-image: url('./images/moviereel.jpeg');
+  /* background-image: url('./images/moviereel.jpeg'); */
 }
 
 .movie-section {
@@ -60,4 +60,32 @@ body {
 
 .strong {
   font-weight: 500;
+}
+
+img {
+  width: 100%;
+}
+.cc-pic {
+  height: 15rem;
+  border: 2px solid black;
+}
+
+.cast-details {
+  align-items: center;
+}
+
+.cast-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.cast {
+  margin: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 10rem;
 }

@@ -6,9 +6,9 @@ const Crew = props => {
       <section>
         <section>
           <span>
-            <h1 className="strong">{props.info.job}</h1>
+            <h1 className="strong">{props.thing.job}</h1>
           </span>
-          {props.info.name}
+          {props.thing.name}
         </section>
       </section>
     </>

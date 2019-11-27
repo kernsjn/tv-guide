@@ -3,10 +3,10 @@ import React from 'react'
 const Cast = props => {
   return (
     <>
-      <section>
+      <section className="cast">
         <img
-          className=""
-          src={`https://image.tmbb.org/t/p/w500${props.item['profile_path']}`}
+          className="cc-pic"
+          src={`https://image.tmdb.org/t/p/w500${props.item['profile_path']}`}
           alt={props.item.name}
         />
       </section>
