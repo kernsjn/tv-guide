@@ -12,6 +12,15 @@ const Header = () => {
         </section>
         <nav>
           <Link to="/">Home</Link>
+          <a
+            href="/"
+            onCLick={() => {
+              console.log('Back!')
+              window.history.back()
+            }}
+          >
+            Back
+          </a>
         </nav>
       </main>
     </>
