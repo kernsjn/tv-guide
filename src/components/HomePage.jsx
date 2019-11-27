@@ -25,17 +25,17 @@ const HomePage = () => {
 
   return (
     <>
-      <main className="home-page-main">
+      <main className="main-page">
         <h1 className="top-title">Top-Rated TV Shows</h1>
-        <div className="tv-item-info randomTVimage center">
-          <div className="center">
+        <div className="tv-item-random">
+          <div className>
             <Link to={{ pathname: `/${tvShow[random].id}`, state: { show } }}>
               <img
                 src={`https://image.tmdb.org/t/p/w500${tvShow[random].poster_path}`}
               />
             </Link>
           </div>
-          <div className="center">
+          <div>
             <h2>{tvShow[random].name}</h2>
             <h3>Rating: {tvShow[random].vote_average}</h3>
             <p>{tvShow[random].overview}</p>
