@@ -1,5 +1,5 @@
 root {
-  font: 16px / 1 sans-serif;
+  font: 16px / 1 arial;
 }
 
 html {
@@ -9,62 +9,119 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-image: url('./images/moviereel.jpeg');
+  /* background-image: url('./images/moviereel.jpeg'); */
+  background-color: rgb(29, 26, 26);
 }
 
-.movie-section {
-  background-color: rgb(29, 26, 26);
+nav a {
+  color: whitesmoke;
+  font-size: 2rem;
+  text-align: right;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav {
+  background-color: red;
+  padding: 2rem;
+  margin-bottom: 0;
+  justify-content: center;
+  text-align: right;
+  margin: 1rem;
+  font-weight: 800;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.top-title {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.tv-item-random {
+  background-image: url('./images/moviereel.jpeg');
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 3rem 3rem;
+  justify-content: center;
+  margin: 1rem;
+  padding: 2rem;
+  text-align: justify;
+  color: whitesmoke;
+}
+
+.details {
+  background-color: black;
   padding: 1rem;
-  border: solid rgb(104, 55, 9) 10px;
+  flex-direction: row;
+  margin: 1rem;
+  border-radius: 0rem 2rem 2rem 0rem;
+  height: 35.25rem;
+  text-align: center;
+}
+
+.details > h2 {
+  font-size: 4rem;
+}
+
+.details > h3 {
+  font-size: 2rem;
+}
+
+.details > p {
+  font-size: 1.25rem;
   text-align: justify;
 }
 
-.title {
-  margin-bottom: 0rem;
-  color: rgb(230, 202, 112);
-  text-align: center;
-  font-size: 4rem;
-  background: rgb(104, 55, 9);
-  margin-bottom: 1.5rem;
-  border-radius: 50%;
-  padding: 1rem;
-  width: 85%;
-  width: 100%;
+.tv-item-section {
+  display: flex;
+  width: 97%;
+  color: whitesmoke;
+  padding: 2rem;
+  margin-left: 0rem;
 }
 
-.poster {
-  background-image: url('./images/moviereel.jpeg');
-  padding: 1rem;
+.tv-show {
+  list-style: none;
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.poster-border {
-  background: rgb(29, 26, 26);
-  border: solid black 6px;
-}
-
-.overview {
-  line-height: 1.5;
-  padding-bottom: 2rem;
-  color: rgb(29, 26, 26);
-  background: rgb(230, 202, 112);
-  border: solid rgb(104, 55, 9) 5px;
-  padding: 3.5rem;
-  margin-top: 1rem;
-  font-size: 1.5rem;
+.item {
+  padding: 2rem;
 }
 
 .strong {
   font-weight: 500;
 }
 
-img {
-  height: 20rem;
+.random-image {
+  width: 25rem;
 }
+
+.other-image {
+  width: 20rem;
+}
+
+.show-name {
+  color: red;
+  text-decoration: none;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.rating {
+  text-align: center;
+}
+
+.cast-page {
+  color: white;
+  margin: 1rem;
+}
+
 .cc-pic {
   height: 15rem;
   border: 2px solid black;
@@ -88,4 +145,18 @@ img {
   align-items: center;
   margin-bottom: 2rem;
   width: 10rem;
+}
+
+.show-information {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Cantarell', sans-serif;
+  border-bottom: solid white;
+}
+.show-information h2 {
+  align-self: center;
+}
+
+.show-information p {
+  font-style: italic;
 }

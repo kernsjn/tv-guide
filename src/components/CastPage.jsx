@@ -9,7 +9,7 @@ const CastPage = props => {
   const showData = props.location.state.show
   const fetchData = async () => {
     const resp = await axios.get(
-      `https://api.themoviedb.org/3/tv/${showData.id}/credits?api_key=02f778ceced92735175a972d795524b5&language=en-US`
+      `https://api.themoviedb.org/3/tv/${showData.id}/credits?api_key=9c1bbfefb575f9cb6c182e019bc74b99&language=en-US`
     )
 
     setCastData(resp.data.cast)
