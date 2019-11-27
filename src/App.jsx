@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
-import CastPage from './pages/CastPage'
-import HomePage from './pages/HomePage'
+import CastPage from './components/CastPage'
+import HomePage from './components/HomePage'
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 
 const App = () => {

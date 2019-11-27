@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import Crew from './components/Crew'
-import Cast from './components/Cast'
+import Crew from './Crew'
+import Cast from './Cast'
 
 const CastPage = props => {
   const [castData, setCastData] = useState([])
