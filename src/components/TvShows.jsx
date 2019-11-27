@@ -31,20 +31,24 @@ const TvShow = props => {
 
   return (
     <>
-      <section className="series-details">
-        <img
-          className="series-details-poster"
-          src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${showData.poster_path}`}
-        />
+      <div className="series-details">
+        <div>
+          <img
+            className="series-poster"
+            src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${showData.poster_path}`}
+          />
+        </div>
         <div className="series-content">
           <h1 className="series-details-header">{showData.name}</h1>
-          <h3>Overview</h3>
+
           <p className="series-details-overview">{showData.overview}</p>
         </div>
-      </section>
-
+      </div>
+      <div>
+        <h1 className="cast-heading">Cast</h1>
+      </div>
       <section className="series-cast">
-        <h1>Cast</h1>
+        <span></span>
         <ul className="actor-list">
           {castData.map((actor, j) => {
             return (
@@ -55,7 +59,7 @@ const TvShow = props => {
                     src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${actor.profile_path}`}
                     alt={`Picture of ${actor.name}`}
                   />
-                  <p className="actor-name">{actor.name}</p>
+                  <p className="actor-name-link">{actor.name}</p>
                 </Link>
                 <p>{actor.character}</p>
               </li>
