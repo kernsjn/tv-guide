@@ -4,11 +4,7 @@ const Cast = props => {
   return (
     <>
       <section>
-        <img
-          className=""
-          src={`https://image.tmbb.org/t/p/w500${props.item['profile_path']}`}
-          alt={props.item.name}
-        />
+        <img className="" src="" />
       </section>
       <section className="character-name">{props.item.character}</section>
       <section className="actor-name">{props.item.name}</section>

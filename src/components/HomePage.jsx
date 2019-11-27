@@ -31,7 +31,7 @@ const HomePage = () => {
           <div className="center">
             <Link to={{ pathname: `/${tvShow[random].id}`, state: { show } }}>
               <img
-                src={`https://image.tmdb.org/t/p/w200${tvShow[random].poster_path}`}
+                src={`https://image.tmdb.org/t/p/w300${tvShow[random].poster_path}`}
               />
             </Link>
           </div>
@@ -53,7 +53,7 @@ const HomePage = () => {
                     }}
                   >
                     <img
-                      src={`https://image.tmdb.org/t/p/w200${show.poster_path}`}
+                      src={`https://image.tmdb.org/t/p/w300${show.p_path}`}
                     />
                     <h3>{show.name}</h3>
                   </Link>
