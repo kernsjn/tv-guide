@@ -1,7 +1,14 @@
+<<<<<<< HEAD:src/components/pages/CastPage.jsx
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Crew from '../components/Crew'
 import Cast from '../components/Cast'
+=======
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import Crew from './Crew'
+import Cast from './Cast'
+>>>>>>> 66a1d09b29e8345730719af6998dde5e7e604dd3:src/components/CastPage.jsx
 
 const CastPage = props => {
   const [castData, setCastData] = useState([])
@@ -15,10 +22,16 @@ const CastPage = props => {
     setCastData(resp.data.cast)
     setCrewData(resp.data.crew.slice(0, 10))
   }
+<<<<<<< HEAD:src/components/pages/CastPage.jsx
   console.log(props.match.params.results)
+=======
+  console.log(props.match.params)
+
+>>>>>>> 66a1d09b29e8345730719af6998dde5e7e604dd3:src/components/CastPage.jsx
   useEffect(() => {
     getApiData()
   }, [])
+
   return (
     <>
       <section className="cast-page">
