@@ -117,7 +117,94 @@ nav {
   text-align: center;
 }
 
-.cast-page {
+.series-details {
+  background-image: url('./images/moviereel.jpeg');
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 2rem;
+  text-align: justify;
+  color: whitesmoke;
+}
+
+.series-content {
+  background-color: black;
+  padding: 1rem;
+  flex-direction: row;
+  margin: 1rem;
+  border-radius: 0rem 2rem 2rem 0rem;
+  height: 35.25rem;
+  text-align: center;
+}
+
+.series-details-header {
+  font-size: 4rem;
+}
+
+.series-details-overview {
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+.actors {
+  padding: 1rem;
+  border: 0.25rem;
+  width: 21rem;
+  justify-content: center;
+}
+
+.series-poster {
+  width: 25rem;
+}
+
+.series-cast {
+  display: flex;
+  width: 97%;
+  color: whitesmoke;
+  padding: 2rem;
+  margin-left: 0rem;
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.actor-list {
+  list-style: none;
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.actor-picture {
+  width: 20rem;
+  color: white;
+}
+
+.cast-heading {
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.actor-name-link {
+  color: red;
+  text-decoration-line: none;
+  font-size: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+/* .cast-page {
   color: white;
   margin: 1rem;
 }
@@ -159,4 +246,4 @@ nav {
 
 .show-information p {
   font-style: italic;
-}
+} */
