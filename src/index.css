@@ -145,3 +145,17 @@ nav {
   margin-bottom: 2rem;
   width: 10rem;
 }
+
+.show-information {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Cantarell', sans-serif;
+  border-bottom: solid white;
+}
+.show-information h2 {
+  align-self: center;
+}
+
+.show-information p {
+  font-style: italic;
+}
