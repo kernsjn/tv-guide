@@ -30,7 +30,12 @@ const CastPage = props => {
           <p>{showData.overview}</p>
         </section>
         <section className="crew-info">
-          <h2 className="crew-title">Crew</h2>
+          <h2 className="crew-title">
+            Crew{' '}
+            <span className="crew-icon">
+              <i class="fas fa-film"></i>
+            </span>
+          </h2>
           <section className="crew-information">
             {crewData.map((thing, j) => {
               return <Crew key={j} thing={thing} />
@@ -39,12 +44,13 @@ const CastPage = props => {
         </section>
         <section className="cast-info">
           <h2>Cast</h2>
-          <section className="cast-information">
-            {castData.map((item, i) => {
-              return <Cast key={i} item={item} />
-            })}
-          </section>
         </section>
+        <section className="cast-information">
+          {castData.map((item, i) => {
+            return <Cast key={i} item={item} />
+          })}
+        </section>
+        {/* </section> */}
       </section>
     </>
   )

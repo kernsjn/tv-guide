@@ -9,9 +9,11 @@ const Cast = props => {
           src={`https://image.tmdb.org/t/p/w500${props.item['profile_path']}`}
           alt={props.item.name}
         />
+
+        <section className="actor-name">{props.item.name}</section>
+        <p className="as">as</p>
+        <section className="character-name">{props.item.character}</section>
       </section>
-      <section className="character-name">{props.item.character}</section>
-      <section className="actor-name">{props.item.name}</section>
     </>
   )
 }
