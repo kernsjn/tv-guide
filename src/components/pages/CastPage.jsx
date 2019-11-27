@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import Crew from './components/Crew'
-import Cast from './components/Cast'
+import Crew from '../components/Crew'
+import Cast from '../components/Cast'
 
 const CastPage = props => {
   const [castData, setCastData] = useState([])
@@ -9,13 +9,13 @@ const CastPage = props => {
   const showData = props.match.params.results
 
   const getApiData = async () => {
-    const reps = await axios.get(
+    const resp = await axios.get(
       `https://api.themovieb.org/3/tv${showData.id}/credits?api_key=9c1bbfefb575f9cb6c182e019bc74b99&language=en-US`
     )
     setCastData(resp.data.cast)
     setCrewData(resp.data.crew.slice(0, 10))
   }
-  console.log(props.match.params)
+  console.log(props.match.params.results)
   useEffect(() => {
     getApiData()
   }, [])
