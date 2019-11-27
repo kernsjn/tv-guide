@@ -201,3 +201,70 @@ nav {
 .as {
   margin: 0.5rem 0 0.5rem 0;
 }
+.actor-poster {
+  color: white;
+}
+.actor-profile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.actor-poster {
+  font-family: 'Cantarell', sans-serif;
+}
+.actor-profile {
+  border-bottom: solid white;
+}
+.actor-profile h1 {
+  align-self: center;
+  font-style: italic;
+}
+.actor-profile img {
+  align-self: center;
+  width: 15rem;
+  height: 18rem;
+  border-radius: 10px;
+  border: solid grey;
+  border-width: 6px;
+}
+.actor-profile h3 {
+  margin-left: 1rem;
+}
+.actor-profile p {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.tv-show-list {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: solid grey;
+}
+.tv-show-list li {
+  list-style: none;
+}
+.credits-show-title {
+  color: white;
+}
+.tv-shows-poster {
+  margin: 1rem;
+}
+.movies-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+.movies-list li {
+  list-style: none;
+}
+.movies-list p {
+  color: white;
+}
+.movies-list img {
+  margin: 1rem;
+}
+.actor-profile-show {
+  margin-left: 1rem;
+}
+.actor-profile-movies {
+  margin-left: 1rem;
+}

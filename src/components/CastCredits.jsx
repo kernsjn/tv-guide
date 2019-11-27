@@ -42,17 +42,18 @@ const CastCredits = props => {
   return (
     <>
       <div className="actor-poster">
-        <img
-          className="actor-pic"
-          src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${actorData.profile_path}`}
-        />
-        <section className="actor-info">
+        <section className="actor-profile">
+          <img
+            className="actor-pic"
+            src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${actorData.profile_path}`}
+          />
           <h1 className="actor-name">{actorData.name}</h1>
-          <h3>What do you want to call this section?</h3>
+
+          <h3 className="Actor-pro">Actor Profile</h3>
           <p className="actor-overview">{actorData.biography}</p>
         </section>
         <section>
-          <h1>Tv Shows</h1>
+          <h1 className="actor-profile-show">Tv Shows</h1>
           <ul className="tv-show-list">
             {tvData.map((shows, j) => {
               return (
@@ -63,7 +64,7 @@ const CastCredits = props => {
                       src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${shows.poster_path}`}
                       alt={`Poster of ${shows.name}`}
                     />
-                    <p>{shows.name}</p>
+                    <p className="credits-show-title">{shows.name}</p>
                   </Link>
                 </li>
               )
@@ -71,7 +72,7 @@ const CastCredits = props => {
           </ul>
         </section>
         <section>
-          <h1>Movies</h1>
+          <h1 className="actor-profile-movies">Movies</h1>
           <ul className="movies-list">
             {movieData.map((movie, i) => {
               return (
