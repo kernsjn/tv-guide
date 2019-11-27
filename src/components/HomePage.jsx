@@ -10,7 +10,7 @@ const HomePage = () => {
 
   const getApiData = async () => {
     const resp = await axios.get(
-      `https://api.themoviedb.org/3/tv/top_rated?api_key=69d23e9b46d479e367d00ab334350749&language=en-US&page=${currentPage}`
+      `https://api.themoviedb.org/3/tv/top_rated?api_key=9c1bbfefb575f9cb6c182e019bc74b99&language=en-US&page=${currentPage}`
     )
     console.log(resp.data.results)
     setTvShow(resp.data.results)

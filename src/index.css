@@ -116,6 +116,11 @@ nav {
   text-align: center;
 }
 
+.cast-page {
+  color: white;
+  margin: 1rem;
+}
+
 .cc-pic {
   height: 15rem;
   border: 2px solid black;
