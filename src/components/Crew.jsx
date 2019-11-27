@@ -5,10 +5,11 @@ const Crew = props => {
     <>
       <section>
         <section>
-          <span>
-            <h1 className="strong">{props.thing.job}</h1>
+          <span className="credits-display">
+            <h1 className="strong">{props.thing.job}:</h1>
+
+            <p className="crew-member">{props.thing.name}</p>
           </span>
-          {props.thing.name}
         </section>
       </section>
     </>
